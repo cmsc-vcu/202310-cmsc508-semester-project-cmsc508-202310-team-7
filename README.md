@@ -4,7 +4,7 @@
 | Member Names | VCU Email Address | Github Username |
 | :---: | :---: | :---: |
 | Charles Cutler | cutlerci@vcu.edu | cutlerci |
-| G Attard | attardg@vcu.edu |                 |
+| G Attard | attardg@vcu.edu | attardg |
 
 ## Phase1
 The *Phase1* folder contains the materials for phase 1 of the VCU Computer Science 508 fall semester project. 
