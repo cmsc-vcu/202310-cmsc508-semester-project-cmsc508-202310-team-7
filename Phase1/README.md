@@ -109,9 +109,33 @@ Below are example queries, written in plain English, that could be asked of the 
 
 ## Entity Relationship [ER] Diagram
 
+![Final](./Final.png "Final Draft of ER Diagram")
 
-![Final](./Phase1/Entity-Relationship Diagrams/Final.png "Final Draft of ER Diagram")
+## Relational Schema
+Note that
+* PK denotes attributes as the members of the primary key for a relation
+* FK denotes attributes that are foreign keys for a relation
+* *Italics* denotes the domain of an attribute
 
+Now, from the above ER Diagram, the following relational schema can be defined:
+* Truck( License Number[PK]: *string*, Volume: *float32*, Length: *float32*, Height: *float32*, Weight: *float32* )
+* Truck_Group( Truck_Group_ID[PK]: *string* )
+* Employee( Employee_ID[PK]: *string*, Employee_First_Name: *string*, Employee_Last_Name: *string*,  Employee_Phone_Number: *string*, Job: *string* )
+* Bill_of_Lading( Bill_ID[PK]: *string*, Signing_Date: *DATE*, Cost: *float32* )
+* Client( Client_ID[PK]: *string*, Client_First_Name: *string*, Client_Last_Name: *string*, Client_Phone_Number: *string* )
+* Move( Move_ID[PK]: *string*, Pickup_Location: *string*, Pickup_Time: *TIME*, Pickup_Date: *DATE*, Drop_Off_Location: *string*, Drop_Off_Time: *TIME*, Drop_Off_Date: *DATE* )
+* Container( Barcode[PK]: *string*, Color: *string*, Length: *float32*, Width: *float32*, Height: *float32*, Weight: *float32*, Volume: *float32*, Packing_Status: *boolean* )
+* Items( Person_ID[PK]: *string*, Item_Name[PK]: *string*, Category: *string*, Sub-category: *string*, Room: *string*, Color: *string*, Quantity: *integer* )
+* Drives( Employee_ID[PK, FK]: *string*, License Number[FK]: *string* )
+* Trucks_With( License Number[PK, FK]: *string*, Truck_Group_ID[PK, FK]: *string* )
+* Leads( Employee_ID[PK, FK]: *string*, Truck_Group_ID[FK]: *string* )
+* Signs( Employee_ID[PK, FK]: *string*, Bill_ID[FK]: *string* )
+* Assigned_To( Move_ID[PK, FK]: *string*, Truck_Group_ID[FK]: *string* )
+* Involves( Move_ID[PK, FK]: *string*, Bill_ID[FK]: *string* )
+* Point_of_Contact( Move_ID[PK, FK]: *string*, Client_ID[FK]: *string* )
+* Signed_To( Barcode[PK, FK]: *string*, Bill_ID[FK]: *string* )
+* Own( Barcode[PK, FK]: *string*, Client_ID[FK]: *string* )
+* Contains( Person_ID[PK, FK]: *string*, Item_Name[PK, FK]: *string*, Barcode[FK]: *string* )
 
 ## Thank You!
 ![MySql logo](./logo-mysql-170x115.png "mysql description")
