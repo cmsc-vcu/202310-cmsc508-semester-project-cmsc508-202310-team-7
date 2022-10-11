@@ -4,6 +4,20 @@
 Charles Cutler and G Attard
 <br/>October 11, 2022
 
+### *Table of Contents*
+* [Introduction](#introduction)
+* [Problem in the status quo](#problem-in-the-status-quo)
+* [Environment](#environment)
+* [Possible Users](#possible-users)
+* [User Groups](#user-groups)
+* [Entities Needed](#entities-needed)
+* [20 Possible Queries](#20-possible-queries)
+* [Entity Relationship Diagram](#entity-relationship-diagram)
+* [Relational Schema](#relational-schema)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 ## Introduction
 This report documents the deliverable items of the first phase for our final project in CMSC 508, "Introduction to Database Theory". This report provides answers to the effect of fullfing the following requirements: describing the problem in the status quo, a list of twenty distinct queries, an Entity-Relationship Diagram, translated relational schema, identified functional dependencies, normalized relation schema, and sample data.
 
@@ -107,7 +121,7 @@ Below are example queries, written in plain English, that could be asked of the 
 * Does anyone in my household have an unpacked box I can use? AKA What are the unpacked boxes for my household?
 * What are the moves that take longer than a 2 days to complete?
 
-## Entity Relationship [ER] Diagram
+## Entity Relationship Diagram
 
 ![Final](./Final.png "Final Draft of ER Diagram")
 
