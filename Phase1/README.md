@@ -184,5 +184,46 @@ Now, from the above ER Diagram, the following relational schema can be defined:
 * Contains( Person_ID[PK, FK]: *string*, Item_Name[PK, FK]: *string*, Barcode[FK]: *string* )
   * Person_ID, Item_Name -> Barcode
 
+## Normalization
+This database was well designed and the relational schema generated from the ERD are already in 4NF
+
+## Sample Data
+
+![AssignedTo](./AssignedTo.png "Sample Data: AssignedTo")
+
+![BillOfLading](./BillOfLading.png "Sample Data: BillOfLading")
+
+![Client](./Client.png "Sample Data: Client")
+
+![Container](./Container.png "Sample Data: Container")
+
+![Contains](./Contains.png "Sample Data: Contains")
+
+![Drives](./Drives.png "Sample Data: Drives")
+
+![Employee](./Employee.png "Sample Data: Employee")
+
+![Involves](./Involves.png "Sample Data: Involves")
+
+![Items](./Items.png "Sample Data: Items")
+
+![Leads](./Leads.png "Sample Data: Leads")
+
+![Move](./Move.png "Sample Data: Move")
+
+![Own](./Own.png "Sample Data: Own")
+
+![PointOfContact](./PointOfContact.png "Sample Data: PointOfContact")
+
+![SignedTo](./SignedTo.png "Sample Data: SignedTo")
+
+![Signs](./Signs.png "Sample Data: Signs")
+
+![Truck](./Truck.png "Sample Data: Truck")
+
+![TruckGroup](./TruckGroup.png "Sample Data: TruckGroup")
+
+![TrucksWith](./TrucksWith.png "Sample Data: TrucksWith")
+
 ## Thank You!
 ![MySql logo](./logo-mysql-170x115.png "mysql description")
