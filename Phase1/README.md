@@ -132,7 +132,7 @@ Note that
 * *Italics* denotes the domain of an attribute
 
 Now, from the above ER Diagram, the following relational schema can be defined:
-* Truck( VIN_Number[PK]: *string*, Volume: *float32*, Length: *float32*, Height: *float32*, Weight: *float32* )
+* Truck( VIN_Number[PK]: *string*, Volume: *string*, Length: *string*, Height: *string*, Weight: *string* )
   * VIN_Number -> Volume, Length, Height, Weight
 
 * Truck_Group( Truck_Group_ID[PK]: *string* )
