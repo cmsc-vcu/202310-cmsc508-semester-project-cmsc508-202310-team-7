@@ -6,7 +6,7 @@
 | Charles Cutler | cutlerci@vcu.edu | cutlerci |
 | G Attard | attardg@vcu.edu | attardg |
 
-## To Open this porject in Visual Studio Code Click Here
+## To Open this project in Visual Studio Code Click Here
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=8523998&assignment_repo_type=AssignmentRepo)
 
 ## Phase 1
