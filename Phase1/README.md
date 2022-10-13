@@ -92,7 +92,7 @@ Data is to be stored about moves, employees, clients, trucks, trucking groups, b
 * The data stored for moves includes an unique id, the pickup date, the pickup time, the pickup location, the drop-off date, the drop-off time, the drop-off location, the point of contact, the "Bill of Lading" involved, and the assigned trucking group. 
 * The data stored for employees includes employee id, employee name, employee job type, and, for those employees that are truck drivers, which truck they drive. Additionally it should be stored if an employee leads a trucking group. 
 * The data stored for clients include an unique id, their name, their email, and their cell phone number. Additionally it should be stored whether they are the point of contact for a move. Lastly, for clients, it should be stroed what containers they own. 
-* The data stored for trucks includes license plate number, truck volume, the length of the truck, the height of the truck, the weight of the truck, which emplyee drives the truck and which trucking groups the truck "trucks with". 
+* The data stored for trucks includes VIN number, truck volume, the length of the truck, the height of the truck, the weight of the truck, which emplyee drives the truck and which trucking groups the truck "trucks with". 
 * The data stored for trucking groups should be the trucking group id, which employee leads each trucking group, which moves each trucking group is assigned to, and which trucks are in each trucking group. 
 * The data stored for bill of ladings includes an unique id, the signing date, and the cost to move. Additionally, the containers involved with each bill of lading, the move each bill is involved with, and the employee who signs the bill should be stored. 
 * The data stored for containers is the bar-code, color, length, width, height, weight, packing status, volume along with who is the owner and which bill of lading it is signed to. 
@@ -132,24 +132,57 @@ Note that
 * *Italics* denotes the domain of an attribute
 
 Now, from the above ER Diagram, the following relational schema can be defined:
-* Truck( License Number[PK]: *string*, Volume: *float32*, Length: *float32*, Height: *float32*, Weight: *float32* )
+* Truck( VIN_Number[PK]: *string*, Volume: *float32*, Length: *float32*, Height: *float32*, Weight: *float32* )
+  * VIN_Number -> Volume, Length, Height, Weight
+
 * Truck_Group( Truck_Group_ID[PK]: *string* )
+  
 * Employee( Employee_ID[PK]: *string*, Employee_First_Name: *string*, Employee_Last_Name: *string*,  Employee_Phone_Number: *string*, Job: *string* )
+  * Employee_ID -> Employee_First_Name, Employee_Last_Name, Employee_Phone_Number, Job
+
 * Bill_of_Lading( Bill_ID[PK]: *string*, Signing_Date: *DATE*, Cost: *float32* )
+  * Bill_ID -> Signing_Date, Cost
+
 * Client( Client_ID[PK]: *string*, Client_First_Name: *string*, Client_Last_Name: *string*, Client_Phone_Number: *string* )
+  * Client_ID -> Client_First_Name, Client_Last_Name, Client_Phone_Number
+
 * Move( Move_ID[PK]: *string*, Pickup_Location: *string*, Pickup_Time: *TIME*, Pickup_Date: *DATE*, Drop_Off_Location: *string*, Drop_Off_Time: *TIME*, Drop_Off_Date: *DATE* )
+  * Move_ID -> Pickup_Location, Pickup_Time, Pickup_Date, Drop_Off_Location, Drop_Off_Time, Drop_Off_Date
+
 * Container( Barcode[PK]: *string*, Color: *string*, Length: *float32*, Width: *float32*, Height: *float32*, Weight: *float32*, Volume: *float32*, Packing_Status: *boolean* )
+  * Barcode -> Color, Length, Width, Height, Weight, Volume, Packing_Status
+
 * Items( Person_ID[PK]: *string*, Item_Name[PK]: *string*, Category: *string*, Sub-category: *string*, Room: *string*, Color: *string*, Quantity: *integer* )
-* Drives( Employee_ID[PK, FK]: *string*, License Number[FK]: *string* )
-* Trucks_With( License Number[PK, FK]: *string*, Truck_Group_ID[PK, FK]: *string* )
+  * Person_ID, Item_Name -> Category, Sub-category, Room, Color, Quantity
+
+
+* Drives( Employee_ID[PK, FK]: *string*, VIN_Number[FK]: *string* ) 
+
+* Trucks_With( Truck_Group_ID[PK, FK]: *string*, VIN_Number[PK, FK]: *string* )
+
 * Leads( Employee_ID[PK, FK]: *string*, Truck_Group_ID[FK]: *string* )
-* Signs( Employee_ID[PK, FK]: *string*, Bill_ID[FK]: *string* )
+  * Employee_ID -> Truck_Group_ID
+
+* Signs( Bill_ID[PK, FK]: *string* , Employee_ID[FK]: *string* )
+  * Bill_ID -> Employee_ID 
+
 * Assigned_To( Move_ID[PK, FK]: *string*, Truck_Group_ID[FK]: *string* )
+  * Move_ID -> Truck_Group_ID
+
 * Involves( Move_ID[PK, FK]: *string*, Bill_ID[FK]: *string* )
+  * Move_ID -> Bill_ID
+
 * Point_of_Contact( Move_ID[PK, FK]: *string*, Client_ID[FK]: *string* )
+  * Move_ID -> Client_ID
+
 * Signed_To( Barcode[PK, FK]: *string*, Bill_ID[FK]: *string* )
+  * Barcode -> Bill_ID
+
 * Own( Barcode[PK, FK]: *string*, Client_ID[FK]: *string* )
+  * Barcode -> Client_ID
+
 * Contains( Person_ID[PK, FK]: *string*, Item_Name[PK, FK]: *string*, Barcode[FK]: *string* )
+  * Person_ID, Item_Name -> Barcode
 
 ## Thank You!
 ![MySql logo](./logo-mysql-170x115.png "mysql description")
