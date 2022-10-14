@@ -38,7 +38,7 @@ To determine appropriate roles for the user groups of the database it was necess
 * A user who drives the stuff
 * A user in charge of all the drivers for a move
 * A user in charge of all the drivers for all moves
-* A user to coordinate with a household for pickup / drop off locations as well as who are the users in a household
+* A user to coordinate with a household for pickup / drop off locations 
 * Database Admin
 
 ## User Groups
@@ -77,8 +77,8 @@ The following user groups and descriptions of their respective accesses are as f
 * Sales Representative
   * Can add new locations
   * Can delete old locations
-  * Can assign locations to households
-  * Can assign people to households
+  * Can assign locations
+  * Can assign people 
   * Can create new people and populate thier information
   * Can schedule moves with pickup / drop-off date, time, and location
   * Can add Bill of Lading to a given move
@@ -113,13 +113,13 @@ Below are example queries, written in plain English, that could be asked of the 
 * What are all the states that a truck is going to in one year?
 * What container did a specific person put their winter coat?
 * What containers for a specific person contain items that belong in the Bedroom?
-* What are all the containers for a household that contain items from the Kitchen?
-* What are the license plate numbers and truck driver names for the trucks associated with a given move?
-* What is the total weight for all containers for a household?
-* How many days until my favorite toy arrives? ( For a specific person )
-* Who has the largest container for a specific household?
-* Does anyone in my household have an unpacked box I can use? AKA What are the unpacked boxes for my household?
-* What are the moves that take longer than a 2 days to complete?
+* What are all the containers for an address that contain items from the Kitchen?
+* What are the VIN numbers and truck driver names for the trucks associated with a given move?
+* What is the total weight for all containers for an address?
+* How many days until a favorite toy arrives? ( For a specific person )
+* Who has the largest container for a specific address?
+* Does anyone in a specific house have an unpacked box I can use?
+* Which moves that take longer than a 7 days to complete?
 
 ## Entity Relationship Diagram
 
