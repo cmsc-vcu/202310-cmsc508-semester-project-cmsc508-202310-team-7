@@ -19,22 +19,22 @@ Charles Cutler and G Attard
 
 
 ## Introduction
-This report documents the deliverable items of the first phase for our final project in CMSC 508, "Introduction to Database Theory". This report provides answers to the effect of fullfing the following requirements: describing the problem in the status quo, a list of twenty distinct queries, an Entity-Relationship Diagram, translated relational schema, identified functional dependencies, normalized relation schema, and sample data.
+This report documents the deliverable items of the first phase for our final project in CMSC 508, "Introduction to Database Theory". This report provides answers to the affect of fullfing the following requirements: describing the problem in the status quo, a list of twenty distinct queries, an Entity-Relationship Diagram, translated relational schema, identified functional dependencies, normalized relation schema, and sample data.
 
 ## Problem in the status quo
 Moving can be a hassle. Whether moving from house to house, house to dorm, or even just right across the street, keeping track of what you have and where it is quickly becomes a difficult task. When it comes time to unpack you can be left wondering, ``"Where are all my winter clothes?”`` or ``"Where are all my utensils?”``. Thus, it can be useful to pack the same stuff in the same box while reworking boxes that could have been packed better, especially when moving with any sort of regularity in a short period of time. However, taking the time to label or relabel all of your boxes and totes can be very tedious.
 
-For example, team member G has moved multiple times and he understands the pain of keeping organized during the process of packing and unpacking. In his experience, the state of his families' belongings were organized in cardboard boxes labeled by general categories. These categories consisted of kitchen, garage, bath, master bedroom,  kids’ bedroom, etc. However, he and his family did not know exactly what the contents of each box were until they opened them and looked.
+For example, team member G has moved multiple times and he understands the pain of keeping organized during the process of packing and unpacking. In his experience, the state of his familiy's belongings were organized in cardboard boxes labeled by general categories. These categories consisted of kitchen, garage, bath, master bedroom,  kids’ bedroom, etc. However, he and his family did not know exactly what the contents of each box were until they opened them and looked.
 
 At the most basic level, a database design should start with items, then include which container/box items are placed into. Adding onto that a database might have the location of the container inside of the household. At the highest level the database may include the household/townhouse/apt location. Each item could include a description, quantity, color, and category.  Each container could include a description, color, and location. Each household could include an address and the people living in it. Therefore a database, to be described in much further detail should be designed with the appropriate "front-end" to provide assistance in solving the above issues.
 
 ## Environment 
-Talk about mySQL. That’s the DDL + DML that’s where and how we will implement database. We will probably be working on the cloud or using azure but to be determined don’t worry about it as of yet
+mySQL is the DDL + DML through which we will implement the database. We will probably be working on the cloud or using azure but it is to be determined.
 
 ## Possible Users
 To determine appropriate roles for the user groups of the database it was necessary to determine possible users. The roles were derived from the following hypothetical users:
 * A user who owns stuff
-* A user in charge of all of their families' stuff
+* A user in charge of all of their familiy's stuff
 * A user who drives the stuff
 * A user in charge of all the drivers for a move
 * A user in charge of all the drivers for all moves
