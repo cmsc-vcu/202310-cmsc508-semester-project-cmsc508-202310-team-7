@@ -91,8 +91,8 @@ Data is to be stored about moves, employees, clients, trucks, trucking groups, b
 
 * The data stored for moves includes an unique id, the pickup date, the pickup time, the pickup location, the drop-off date, the drop-off time, the drop-off location, the point of contact, the "Bill of Lading" involved, and the assigned trucking group. 
 * The data stored for employees includes employee id, employee name, employee job type, and, for those employees that are truck drivers, which truck they drive. Additionally it should be stored if an employee leads a trucking group. 
-* The data stored for clients include an unique id, their name, their email, and their cell phone number. Additionally it should be stored whether they are the point of contact for a move. Lastly, for clients, it should be stroed what containers they own. 
-* The data stored for trucks includes VIN number, truck volume, the length of the truck, the height of the truck, the weight of the truck, which emplyee drives the truck and which trucking groups the truck "trucks with". 
+* The data stored for clients include an unique id, their name, and their phone number. Additionally it should be stored whether they are the point of contact for a move. Lastly, for clients, it should be stored what containers they own. 
+* The data stored for trucks includes VIN number, truck volume, the length of the truck, the height of the truck, the weight capicity of the truck, which employee drives the truck and which trucking groups the truck "trucks with". 
 * The data stored for trucking groups should be the trucking group id, which employee leads each trucking group, which moves each trucking group is assigned to, and which trucks are in each trucking group. 
 * The data stored for bill of ladings includes an unique id, the signing date, and the cost to move. Additionally, the containers involved with each bill of lading, the move each bill is involved with, and the employee who signs the bill should be stored. 
 * The data stored for containers is the bar-code, color, length, width, height, weight, packing status, volume along with who is the owner and which bill of lading it is signed to. 
