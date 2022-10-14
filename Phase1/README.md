@@ -101,7 +101,7 @@ Data is to be stored about moves, employees, clients, trucks, trucking groups, b
 ## 20 Possible Queries
 Below are example queries, written in plain English, that could be asked of the database as it was described above.
 * Who are the employees who are Sales Representatives?
-* What are the heights of all trucks that have a height greater than 17 feet?
+* What are the heights of all trucks that have a length greater than 17 feet?
 * Who are all the drivers, and their respective trucks, who are hauling during the month of June 2023?
 * Display all of the moves that cost more than 10000 dollars and the point of contact for these moves.
 * Where are all the locations for which a specific driver goes to for the month of July 2023?
