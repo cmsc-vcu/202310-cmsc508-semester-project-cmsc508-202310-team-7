@@ -209,7 +209,7 @@ This database was well designed and the relational schema generated from the ERD
 
 ![Leads](./Leads.png "Sample Data: Leads")
 
-![Move](./Move.png "Sample Data: Move")
+![Move](./CorrectMove.png "Sample Data: Move")
 
 ![Own](./Own.png "Sample Data: Own")
 
