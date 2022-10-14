@@ -2,7 +2,7 @@
 
 # CMSC 508 Semester Project Phase 1 Report
 Charles Cutler and G Attard
-<br/>October 11, 2022
+<br/>October 14, 2022
 
 ### *Table of Contents*
 * [Introduction](#introduction)
@@ -14,6 +14,8 @@ Charles Cutler and G Attard
 * [20 Possible Queries](#20-possible-queries)
 * [Entity Relationship Diagram](#entity-relationship-diagram)
 * [Relational Schema](#relational-schema)
+* [Normalization](#normalization)
+* [Sample Data](#sample-data)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
