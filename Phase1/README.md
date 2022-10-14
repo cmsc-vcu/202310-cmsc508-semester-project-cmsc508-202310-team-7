@@ -108,15 +108,15 @@ Below are example queries, written in plain English, that could be asked of the 
 * Have all the bill of ladings been uploaded for the moves happening during a specific week?
 * For a specific move, are all the containers packed?
 * Which employees lead truck groups involved in moves during December?
-* Display the boxes a specific person has with volume greater than 1 cubic foot that are not packed.
+* Display the boxes a specific client has with volume greater than 1 cubic foot that are not packed.
 * Who are all the point of contacts for all of the moves happening in February 2023?
 * What are all the states that a truck is going to in one year?
-* What container did a specific person put their winter coat?
-* What containers for a specific person contain items that belong in the Bedroom?
+* What container did a specific client put their winter coat?
+* What containers for a specific client contain items that belong in the Bedroom?
 * What are all the containers for an address that contain items from the Kitchen?
 * What are the VIN numbers and truck driver names for the trucks associated with a given move?
 * What is the total weight for all containers for an address?
-* How many days until a favorite toy arrives? ( For a specific person )
+* How many days until a favorite toy arrives? ( For a specific client )
 * Who has the largest container for a specific address?
 * Does anyone in a specific house have an unpacked box I can use?
 * Which moves that take longer than a 7 days to complete?
@@ -152,8 +152,8 @@ Now, from the above ER Diagram, the following relational schema can be defined:
 * Container( Barcode[PK]: *string*, Color: *string*, Length: *float32*, Width: *float32*, Height: *float32*, Weight: *float32*, Volume: *float32*, Packing_Status: *boolean* )
   * Barcode -> Color, Length, Width, Height, Weight, Volume, Packing_Status
 
-* Items( Person_ID[PK]: *string*, Item_Name[PK]: *string*, Category: *string*, Sub-category: *string*, Room: *string*, Color: *string*, Quantity: *integer* )
-  * Person_ID, Item_Name -> Category, Sub-category, Room, Color, Quantity
+* Items( Client_ID[PK]: *string*, Item_Name[PK]: *string*, Category: *string*, Sub-category: *string*, Room: *string*, Color: *string*, Quantity: *integer* )
+  * Client_ID, Item_Name -> Category, Sub-category, Room, Color, Quantity
 
 
 * Drives( Employee_ID[PK, FK]: *string*, VIN_Number[FK]: *string* ) 
@@ -181,8 +181,8 @@ Now, from the above ER Diagram, the following relational schema can be defined:
 * Own( Barcode[PK, FK]: *string*, Client_ID[FK]: *string* )
   * Barcode -> Client_ID
 
-* Contains( Person_ID[PK, FK]: *string*, Item_Name[PK, FK]: *string*, Barcode[FK]: *string* )
-  * Person_ID, Item_Name -> Barcode
+* Contains( Client_ID[PK, FK]: *string*, Item_Name[PK, FK]: *string*, Barcode[FK]: *string* )
+  * Client_ID, Item_Name -> Barcode
 
 ## Normalization
 This database was well designed and the relational schema generated from the ERD are already in 4NF
