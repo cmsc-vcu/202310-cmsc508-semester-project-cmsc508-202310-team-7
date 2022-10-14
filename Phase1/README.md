@@ -107,8 +107,8 @@ Below are example queries, written in plain English, that could be asked of the 
 * Where are all the locations for which a specific driver goes to for the month of July 2023?
 * Have all the bill of ladings been uploaded for the moves happening during a specific week?
 * For a specific move, are all the containers packed?
-* Who is the head of household for the household that lives at a specific address?
-* Display the boxes a specific person have with volume greater than 1 cubic foot that are not packed.
+* Which employees lead truck groups involved in moves during December?
+* Display the boxes a specific person has with volume greater than 1 cubic foot that are not packed.
 * Who are all the point of contacts for all of the moves happening in February 2023?
 * What are all the states that a truck is going to in one year?
 * What container did a specific person put their winter coat?
