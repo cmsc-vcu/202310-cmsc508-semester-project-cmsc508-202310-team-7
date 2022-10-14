@@ -95,8 +95,8 @@ Data is to be stored about moves, employees, clients, trucks, trucking groups, b
 * The data stored for trucks includes VIN number, truck volume, the length of the truck, the height of the truck, the weight capicity of the truck, which employee drives the truck and which trucking groups the truck "trucks with". 
 * The data stored for trucking groups should be the trucking group id, which employee leads each trucking group, which moves each trucking group is assigned to, and which trucks are in each trucking group. 
 * The data stored for bill of ladings includes an unique id, the signing date, and the cost to move. Additionally, the containers involved with each bill of lading, the move each bill is involved with, and the employee who signs the bill should be stored. 
-* The data stored for containers is the bar-code, color, length, width, height, weight, packing status, volume along with who is the owner and which bill of lading it is signed to. 
-* The data stored for items includes owner ID, item name, category, subcategory, room, color, dimension, and quantity. Additionally the container the item gets packed in should be stored.
+* The data stored for containers is the barcode, color, length, width, height, weight, packing status, volume along with who is the owner and which bill of lading it is signed to. 
+* The data stored for items includes client ID, item name, category, subcategory, room, color, dimension, and quantity. Additionally the container the item gets packed in should be stored.
 
 ## 20 Possible Queries
 Below are example queries, written in plain English, that could be asked of the database as it was described above.
