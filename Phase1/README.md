@@ -146,7 +146,7 @@ Now, from the above ER Diagram, the following relational schema can be defined:
 * Client( Client_ID[PK]: *string*, Client_First_Name: *string*, Client_Last_Name: *string*, Client_Phone_Number: *string* )
   * Client_ID -> Client_First_Name, Client_Last_Name, Client_Phone_Number
 
-* Move( Move_ID[PK]: *string*, Pickup_Location: *string*, Pickup_Time: *TIME*, Pickup_Date: *DATE*, Drop_Off_Location: *string*, Drop_Off_Time: *TIME*, Drop_Off_Date: *DATE* )
+* Move( Move_ID[PK]: *string*, Pickup_Street: *string*, Pickup_City: *string*, Pickup_State: *string*, Pickup_ZipCode: *string*, Pickup_Time: *TIME*, Pickup_Date: *DATE*, Drop_Off_Street: *string*, Drop_Off_City: *string*, Drop_Off_State: *string*, Drop_Off_ZipCode: *string*, Drop_Off_Time: *TIME*, Drop_Off_Date: *DATE* )
   * Move_ID -> Pickup_Location, Pickup_Time, Pickup_Date, Drop_Off_Location, Drop_Off_Time, Drop_Off_Date
 
 * Container( Barcode[PK]: *string*, Color: *string*, Length: *float32*, Width: *float32*, Height: *float32*, Weight: *float32*, Volume: *float32*, Packing_Status: *boolean* )
