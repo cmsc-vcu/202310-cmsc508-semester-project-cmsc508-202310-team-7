@@ -50,7 +50,7 @@ WHERE
 
 
 -- Query 04
--- Display all of the moves that cost more than 20000 dollars and the point of contact for these moves.
+-- Display all of the moves that cost more than 8500 dollars and the point of contact for these moves.
 
 SELECT 
     Move_Table_Move_ID AS "MOVE ID",
@@ -66,7 +66,7 @@ FROM
     JOIN Client             ON(Point_of_Contact_Client_ID=Client_ID)
 WHERE
     1=1
-    AND Bill_of_Lading_Cost > 20000
+    AND Bill_of_Lading_Cost > 8500
 ;
 
 
@@ -332,7 +332,7 @@ WHERE
 
 
 -- Query 20
--- Which moves that take longer than a 7 days to complete?
+-- Which moves that take longer than a 4 days to complete?
 
 SELECT
     Move_Table_Move_ID
@@ -340,13 +340,7 @@ FROM
     Move_Table
 WHERE
     1=1
-    AND DATEDIFF (Move_Table_Drop_Off_Date, Move_Table_Pickup_Date) > 7
+    AND DATEDIFF (Move_Table_Drop_Off_Date, Move_Table_Pickup_Date) > 4
 ;
 
 
-
-
-
-
-
-CALL GetEmployees();
