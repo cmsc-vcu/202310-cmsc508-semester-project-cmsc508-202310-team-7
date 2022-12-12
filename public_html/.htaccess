@@ -1,0 +1,6 @@
+# .htaccess Configuration file for userdir
+
+SetEnv SAMPLE_SERVER cmsc508.com
+SetEnv SAMPLE_DB 202310_users_attardg
+SetEnv SAMPLE_USER attardg
+SetEnv SAMPLE_PASS Shout4_attardg_GOME
