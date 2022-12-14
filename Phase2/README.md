@@ -86,6 +86,26 @@ Data is to be stored about moves, employees, clients, trucks, trucking groups, b
 
 ## 20 Possible Queries
 Below are example queries, written in plain English, that could be asked of the database as it was described above.
+* Who are the employees who are Sales Representatives?
+* What are the heights of all the trucks that have a length greater than 17 feet?
+* Who are all the drivers and their respective trucks, who are hauling during the month of June 2023?
+* Display all of the moves that cost more than 8500 dollars and the points of contact for these moves.
+* Where are all the locations for which a specific driver goes to in 2023?
+* Have all the bill of ladings been uploaded for the moves happening during a specific month?
+* For a specific move, are all the packaged units packed?
+* Which employees lead truck groups involved in moves during December 2023?
+* Display the packaged units for a specific client that have a volume greater than 1 cubic foot and are not packed.
+* Who are all the point of contacts for all of the moves happening in February 2023?
+* What are all the states that a truck is going to in one year?
+* What packaged unit did a specific client put their winter coat?
+* What containers for a specific client contain items that belong in the Bedroom?
+* What are all the packaged units for a move that are from the Kitchen?
+* What are the VIN numbers and truck driver names for the trucks associated with a given move?
+* Which room, for a specific move, has the most stuff?
+* How many days until a favorite jacket arrives? ( For a specific client )
+* Who has the largest container for a specific address?
+* What is the avergae cost per packaged unit to move my stuff ( for a specific move )
+* Which moves that take longer than a 4 days to complete?
 
 ## Entity Relationship Diagram
 
@@ -154,6 +174,19 @@ Now, from the above ER Diagram, the following relational schema can be defined:
 This database was well designed and the relational schema generated from the ERD are already in 4NF
 
 ## Sample Data
+
+## What we learned
+
+Throughout the lifecycle of this project we learned three main things:
+1) Constant communication is necessry for success. We, as a team, met consitently throughout the semester. At these meetings we made sure to plan our tasks for the week as well as make sure we had a good timeline. However, as the semester got harder and we were bot able to meet as frequently, we found it much harder to get tasks completed and stay on track. 
+
+2) Writing SQL code is the best way to get better at SQL code. As straighforward as this sounds it can appear underappreciated. This project required writing advanced level SQL code. In the beginning we struggled but the more code we wrote, the better we got. This cannot be overstated, write SQL and you WILL get better.
+
+3) Look at your data. As we made data, built of DDL file, and began working with our 20 queries we realized that some of the initial choices we made for data types did not make any sense. Our advice would be to really take a deep look at your data, make sure it makes logical sense, and constantly make improvements to it as you need to.
+
+## Semester Project Improvements
+
+In our opinion, the project could be improved if we learned more about SQL and working in SQL earlier. Many of the conceptys used in the second phase we did not learn until the last 1/3 of the semester making for some late nights. Additionally, seeing the sample websites sooner and getting to play around with the web development side of this project sooner would have been useful in developing a better website. Additionally, it would have allowed us more time to ask questions and really dig in deep with learning how to communicate with a backend and database.
 
 ## Thank You!
 ![MySql logo](./logo-mysql-170x115.png "mysql description")
