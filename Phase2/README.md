@@ -85,6 +85,7 @@ Data is to be stored about moves, employees, clients, trucks, trucking groups, b
 * The data stored for items includes client ID, item name, room, category, subcategory, quantity. Additionally we should store the packaged unit the item gets packed into.
 
 ## 20 Possible Queries
+The RAW queries to the below 20 queries in English can be found in the DML file in this repository. They are written in MySQL.
 Below are example queries, written in plain English, that could be asked of the database as it was described above.
 * Who are the employees who are Sales Representatives?
 * What are the heights of all the trucks that have a length greater than 17 feet?
@@ -174,6 +175,11 @@ Now, from the above ER Diagram, the following relational schema can be defined:
 This database was well designed and the relational schema generated from the ERD are already in 4NF
 
 ## Sample Data
+
+## Website Design
+Attached below is a diagram of how we planned to implement our website to allow for a manager to do the Create, Read, Update, and Delete ( CRUD ) actions on the data.
+
+![AdminUI](./Website_UI.png "UI Design for the Admin Access to the Website")
 
 ## What we learned
 
