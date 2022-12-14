@@ -8,17 +8,17 @@ Charles Cutler and G Attard
 
 
 ## Introduction
-This report documents the deliverable items of the second phase for our final project in CMSC 508, "Introduction to Database Theory". This report provides answers to the affect of fullfing the following requirements: Project Documentation, Database Implemnetation, Website Implemnetation, and a Video Presentation.
+This report documents the deliverable items of the second phase for our final project in CMSC 508, "Introduction to Database Theory". This report provides answers to the effect of fullfilling the following requirements: Project Documentation, Database Implementation, Website Implemnetation, and a Video Presentation.
 
 ## Problem in the status quo
-Moving can be a hassle. Whether moving from house to house, house to dorm, or even just right across the street, keeping track of what you have and where it is quickly becomes a difficult task. When it comes time to unpack you can be left wondering, ``"Where are all my winter clothes?”`` or ``"Where are all my utensils?”``. Thus, it can be useful to pack the same stuff in the same box while reworking boxes that could have been packed better, especially when moving with any sort of regularity in a short period of time. However, taking the time to label or relabel all of your boxes and totes can be very tedious.
+Moving can be a hassle. Whether moving from house to house, house to dorm, or even just right across the street, keeping track of what you have and where it is quickly becomes a difficult task. When it comes time to unpack you can be left wondering, ``"Where are all my winter clothes?”`` or ``"Where are all my utensils?”``. Thus, it can be useful to pack the same stuff in the same box while reworking boxes that could have been packed better, especially when moving with any sort of regularity in a short period of time. However, taking the time to label or relabel all of your boxes can be very tedious.
 
-For example, team member G has moved multiple times and he understands the pain of keeping organized during the process of packing and unpacking. In his experience, the state of his familiy's belongings were organized in cardboard boxes labeled by general categories. These categories consisted of kitchen, garage, bath, master bedroom,  kids’ bedroom, etc. However, he and his family did not know exactly what the contents of each box were until they opened them and looked.
+For example, team member G has moved multiple times and he understands the pain of keeping organized during the process of packing and unpacking. In his experience, the state of his family's belongings were organized in cardboard boxes labeled by general categories. These categories consisted of kitchen, garage, bath, master bedroom,  kids’ bedroom, etc. However, he and his family did not know exactly what the contents of each box were until they opened them and looked.
 
-At the most basic level, a database design should start with items, then include which container/box items are placed into. Adding onto that a database might have the location of the container inside of the household. At the highest level the database may include the household/townhouse/apt location. Each item could include a description, quantity, color, and category.  Each container could include a description, color, and location. Each household could include an address and the people living in it. Therefore a database, to be described in much further detail should be designed with the appropriate "front-end" to provide assistance in solving the above issues.
+At the most basic level, a database design should start with items, then include which box items are placed into. Adding onto that a database might have the location of the container inside of the household. At the highest level the database may include the household/townhouse/apt location. Each item could include a description, quantity, color, and category.  Each container could include a description, color, and location. Each household could include an address and the people living in it. Therefore a database, to be described in much further detail should be designed with the appropriate "front-end" to provide assistance in solving the above issues.
 
 ## Environment 
-mySQL is the DDL + DML through which we will implement the database. We We will probably be working on the cloud or using azure but it is to be determined.
+mySQL is the DDL + DML through which we will implement the database. We will probably be working on the cloud or using azure but it is to be determined.
 
 ## Hypothetical Users
 To determine appropriate roles for the user groups of the database it was necessary to determine possible users. The roles were derived from the following hypothetical users:
@@ -65,7 +65,7 @@ The following user groups and descriptions of their respective accesses are as f
   * Can delete old locations
   * Can assign locations
   * Can assign people 
-  * Can create new people and populate thier information
+  * Can create new people and populate their information
   * Can schedule moves with pickup / drop-off date, time, and location
   * Can add Bill of Lading to a given move
   * Can add a charge to a given move
@@ -104,8 +104,8 @@ Below are example queries, written in plain English, that could be asked of the 
 * Which room, for a specific move, has the most stuff?
 * How many days until a favorite jacket arrives? ( For a specific client )
 * Who has the largest container for a specific address?
-* What is the avergae cost per packaged unit to move my stuff ( for a specific move )
-* Which moves that take longer than a 4 days to complete?
+* What is the average cost per packaged unit to move my stuff ( for a specific move )
+* Which moves that take longer than 4 days to complete?
 
 ## Entity Relationship Diagram
 
@@ -178,15 +178,15 @@ This database was well designed and the relational schema generated from the ERD
 ## What we learned
 
 Throughout the lifecycle of this project we learned three main things:
-1) Constant communication is necessry for success. We, as a team, met consitently throughout the semester. At these meetings we made sure to plan our tasks for the week as well as make sure we had a good timeline. However, as the semester got harder and we were bot able to meet as frequently, we found it much harder to get tasks completed and stay on track. 
+1) Constant communication is necessary for success. We, as a team, met consistently throughout the semester. At these meetings, we made sure to plan our tasks for the week as well as make sure we had a good timeline. However, as the semester got harder and we were not able to meet as frequently, we found it much harder to get tasks completed and stay on track. 
 
-2) Writing SQL code is the best way to get better at SQL code. As straighforward as this sounds it can appear underappreciated. This project required writing advanced level SQL code. In the beginning we struggled but the more code we wrote, the better we got. This cannot be overstated, write SQL and you WILL get better.
+2) Writing SQL code is the best way to get better at SQL code. As straightforward as this sounds it can appear under-appreciated. This project required writing advanced-level SQL code. In the beginning, we struggled but the more code we wrote, the better we got. This cannot be overstated, write SQL and you WILL get better.
 
 3) Look at your data. As we made data, built of DDL file, and began working with our 20 queries we realized that some of the initial choices we made for data types did not make any sense. Our advice would be to really take a deep look at your data, make sure it makes logical sense, and constantly make improvements to it as you need to.
 
 ## Semester Project Improvements
 
-In our opinion, the project could be improved if we learned more about SQL and working in SQL earlier. Many of the conceptys used in the second phase we did not learn until the last 1/3 of the semester making for some late nights. Additionally, seeing the sample websites sooner and getting to play around with the web development side of this project sooner would have been useful in developing a better website. Additionally, it would have allowed us more time to ask questions and really dig in deep with learning how to communicate with a backend and database.
+In our opinion, the project could be improved if we learned more about SQL and working in SQL earlier. Many of the concepts used in the second phase we did not learn until the last 1/3 of the semester making for some late nights. Additionally, seeing the sample websites sooner and getting to play around with the web development side of this project sooner would have been useful in developing a better website. Additionally, it would have allowed us more time to ask questions and really dig in deep with learning how to communicate with a backend and database.
 
 ## Thank You!
 ![MySql logo](./logo-mysql-170x115.png "mysql description")
