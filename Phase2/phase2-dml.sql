@@ -6,28 +6,6 @@ FROM
 WHERE
     1=1
 ;
-SHOW TABLES
-
-SHOW COLUMNS FROM Assigned_To
-SHOW COLUMNS FROM Associated_With
-SHOW COLUMNS FROM Bill_of_Lading
-SHOW COLUMNS FROM Client
-SHOW COLUMNS FROM Drives
-SHOW COLUMNS FROM Employee
-SHOW COLUMNS FROM Involves
-SHOW COLUMNS FROM Items
-SHOW COLUMNS FROM Leads
-SHOW COLUMNS FROM Move_Table
-SHOW COLUMNS FROM Own
-SHOW COLUMNS FROM Packaged_As
-SHOW COLUMNS FROM Packaged_Unit
-SHOW COLUMNS FROM Point_of_Contact
-SHOW COLUMNS FROM Signs
-SHOW COLUMNS FROM Truck
-SHOW COLUMNS FROM Truck_Group
-SHOW COLUMNS FROM Trucks_With
-
-
 
 -- Query 01
 -- Who are the employees who are Sales Representatives?
@@ -37,6 +15,7 @@ SELECT
 FROM
     viewSalesReps
 ; 
+
 
 -- Query 02
 -- What are the heights of all trucks that have a length greater than 17 feet?
@@ -89,6 +68,8 @@ FROM
 WHERE
     1=1
     AND Bill_of_Lading_Cost > 8500
+ORDER BY 
+    2, 1
 ;
 
 
@@ -117,7 +98,7 @@ WHERE
 
 
 -- Query 06
--- Have all the bill of ladings been uploaded for the moves happening during a specific week?
+-- Have all the bill of ladings been uploaded for the moves happening during a specific month?
 
 -- Returns all the Move IDS that are MISSING Bill of Ladings AND are within a Specified Time Range
 SELECT 
@@ -130,6 +111,9 @@ WHERE
     AND ( Move_Table_Pickup_Date >= DATE("2023-07-01") AND Move_Table_Pickup_Date <= DATE("2023-07-07") )
     AND Involves_Bill_of_Lading_Bill_ID IS NULL
 ;
+
+SELECT * FROM Packaged_As
+SELECT * FROM Items
 
 
 -- Query 07
@@ -172,7 +156,7 @@ WHERE
 
 
 -- Query 09
--- Display the boxes a specific client has with volume greater than 1 cubic foot that are not packed.
+-- Display the packaged units for a specific client that have a volume greater than 1 cubic foot and are not packed.
 
 SELECT 
     Container_Barcode
@@ -301,7 +285,7 @@ WHERE
 
 
 -- Query 16
--- What is the total weight for all containers for an address?
+-- Which room, for a specific move, has the most stuff?
 
 SELECT 
     CONCAT(Move_Table_Pickup_Street," ",Move_Table_Pickup_City,", ",Move_Table_Pickup_State," ", Move_Table_Pickup_ZipCode) AS "Address",
@@ -342,7 +326,7 @@ WHERE
 ;
 
 -- Query 19
--- Does anyone in a specific house have an unpacked box I can use?
+-- What is the avergae cost per packaged unit to move my stuff ( for a specific move )
 
 SELECT 
     * 
