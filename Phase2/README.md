@@ -176,6 +176,10 @@ This database was well designed and the relational schema generated from the ERD
 
 ## Sample Data
 
+The sample data that we created for this project can be found in two places.
+1) In the 508 - Sample Data.xlsx spreadsheet as an "Editable" format
+2) In the DDL file as mMySQL "Insert" statements
+
 ## Website Design
 Attached below is a diagram of how we planned to implement our website to allow for a manager to do the Create, Read, Update, and Delete ( CRUD ) actions on the data.
 
