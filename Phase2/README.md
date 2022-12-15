@@ -199,5 +199,9 @@ Throughout the lifecycle of this project we learned three main things:
 
 In our opinion, the project could be improved if we learned more about SQL and working in SQL earlier. Many of the concepts used in the second phase we did not learn until the last 1/3 of the semester making for some late nights. Additionally, seeing the sample websites sooner and getting to play around with the web development side of this project sooner would have been useful in developing a better website. Additionally, it would have allowed us more time to ask questions and really dig in deep with learning how to communicate with a backend and database.
 
+## Video Link
+
+https://youtu.be/tpKnq9Z7OZ4
+
 ## Thank You!
 ![MySql logo](./logo-mysql-170x115.png "mysql description")
