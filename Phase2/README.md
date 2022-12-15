@@ -184,6 +184,7 @@ The sample data that we created for this project can be found in two places.
 Attached below is a diagram of how we planned to implement our website to allow for a manager to do the Create, Read, Update, and Delete ( CRUD ) actions on the data.
 
 ![AdminUI](./Website_UI.png "UI Design for the Admin Access to the Website")
+![LoginInPage](./log_in.png "LogIN page for our Website")
 
 ## What we learned
 
