@@ -26,7 +26,9 @@ $(document).ready(function(){
 </style>
 </head>
 <body>
-<h1>Hello world!</h1>
+<h1>Team07 Moving Company</h1>
+<p>
+Team Members: Charles Cutler, Attard G
 <p>
 Sample connection to MySql using PHP 
 <?php
@@ -50,9 +52,9 @@ try {
 ?>
 </p>
 
-<div id="flip">Click to slide the panel down or up</div>
+<div id="flip">Click to see acccessable Databases</div>
 <div id="panel">
-<h2>Databases that I can access</h2>
+<h2>Databases that we can access</h2>
 The following is a list of databases accessible by this
 user account.<br/>
 <table>
@@ -66,5 +68,9 @@ while( ( $db = $dbs->fetchColumn( 0 ) ) !== false )
 ?>
 </table>
 </div>
+<p style="text-align: center">
+<button1 onclick="window.location.href='login.php'">Click to begin</button1>
+</div>  
+    </form>
 </body>
 </html>
