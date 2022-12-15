@@ -30,7 +30,7 @@ $(document).ready(function(){
 <p>
 Sample connection to MySql using PHP 
 <?php
-# Attardg
+
 # These setting are stored in the .htaccess file
 
 $servername = $_SERVER['SAMPLE_SERVER'];
