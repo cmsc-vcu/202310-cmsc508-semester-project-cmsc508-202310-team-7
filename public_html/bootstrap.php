@@ -27,7 +27,7 @@
     <?php
 
 # These setting are stored in the .htaccess file
-
+# test
 $servername = $_SERVER['SAMPLE_SERVER'];
 $username = $_SERVER['SAMPLE_USER'];
 $password = $_SERVER['SAMPLE_PASS'];
